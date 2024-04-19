@@ -259,6 +259,7 @@ public struct AlertToast: View{
                     Text(LocalizedStringKey(subTitle!))
                         .font(style?.subTitleFont ?? Font.subheadline)
                         .lineLimit(2)
+                        .truncationMode(.tail)
                 }
             }
             .multilineTextAlignment(.leading)
